@@ -16,7 +16,7 @@ setup(
     license='BSD License',
     description='A simple Django app to display national flags for languages.',
     long_description=README,
-    url='https://github.com/django-language-flags',
+    url='https://github.com/anselmlingnau/django-language-flags',
     author='Anselm Lingnau',
     author_email='anselm@anselms.net',
     classifiers=[
