@@ -4,6 +4,8 @@
 import random
 
 from django import template
+from django.conf import settings
+
 
 register = template.Library()
 
@@ -19,4 +21,4 @@ def flags_for_language(context, count, language):
     flags = language_flags[language]
     if len(flags) > count:
         flags = [flags[0]] + random.sample(flags[1:], count-1)
-    return {'STATIC_URL': context['STATIC_URL'], 'flags': flags}
+    return {'STATIC_URL': settings.STATIC_URL, 'flags': flags}
