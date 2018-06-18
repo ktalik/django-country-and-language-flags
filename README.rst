@@ -2,9 +2,12 @@
 Language-Flags
 ==============
 
-Flags is a simple Django app that helps display national flags. For
+Language-Flags is a simple Django app that helps display national flags. For
 efficiency, there is just one huge PNG file with all the flags, and
 individual flags are selected for display using CSS trickery.
+
+This module provides tools for display of country flags based on their country code
+and sets of flags of nations where a particular language is spoken.
 
 Quick start
 -----------
@@ -37,6 +40,9 @@ Quick start
    This will display COUNT flags for language LANGUAGE; the flags will
    always include the first country listed for LANGUAGE, while the
    remainder will be randomly selected from the other countries.
+   
+   If the LANGUAGE code is equal to existing country code,
+   one flag of related country is displayed.
 
 Acknowledgments
 ---------------
