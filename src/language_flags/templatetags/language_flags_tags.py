@@ -12,6 +12,7 @@ register = template.Library()
 language_flags = {
     'de': ('de', 'at', 'ch'),
     'en': ('gb', 'us', 'au', 'nz', 'ie', 'ca'),
+    'ja': ('jp',)
 }
 
 
